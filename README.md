@@ -16,7 +16,7 @@ A comprehensive, two-phase machine learning pipeline governing the entire credit
 * **Core Workspace**: `CC_Credit_Card_Approval.ows` 
 * **Execution Environment**: Orange Data Mining Tool
 * **Methodology**: 
-  - Ingests the normalized PCA-transformed transaction matrices (`V1-V28`, `Amount`) directly from `creditcard_balanced.csv` (which was explicitly generated via **random under-sampling** of the legitimate class, avoiding synthetic SMOTE generation).
+  - Ingests the normalized anonymized transaction matrices (`V1-V28`, `Amount`) directly from `creditcard_balanced.csv` (which was explicitly generated via **random under-sampling** of the legitimate class, avoiding synthetic SMOTE generation).
   - Utilizes visual data pipeline mechanics to map the transaction topology directly to a binary `Class` target constraint (Fraud vs. Authentic).
   - Implements out-of-the-box classification algorithms (Standard Logistic Regression & Tree Ensembles) visually.
   - Computes native mathematical evaluation procedures (AUC, Classification Accuracy, F1 Scores) exclusively through local widget cross-validation mapping without continuous code debugging.
@@ -27,7 +27,7 @@ A comprehensive, two-phase machine learning pipeline governing the entire credit
 **Objective**: Monitor and classify live post-issuance transactions to algorithmically flag anomalies and actively prevent fiscal loss.
 
 ### Technical Implementation
-* **Dataset Initialization**: Ingests anonymized PCA-transformed transaction matrices (`V1-V28`) and unscaled `Amount` variables loaded strictly via the core `creditcard_balanced.csv` file.
+* **Dataset Initialization**: Ingests anonymized transaction matrices (`V1-V28`) and unscaled `Amount` variables loaded strictly via the core `creditcard_balanced.csv` file.
 * **Descriptive Framework**: Computes highly memory-optimized `MiniBatchKMeans` algorithms (`k=3`) for instantaneous spatial profiling of standard normative transaction arrays natively.
 * **Diagnostic Architecture**: Employs `shap.TreeExplainer` engines to map the marginal Game-Theoretic Shapley values strictly to the XGBoost predictor arrays, programmatically sourcing the exact mathematical feature triggering any anomaly detection.
 * **Predictive Machinery**: Dispatches an `XGBClassifier` running a dynamically calibrated `scale_pos_weight` matrix to heavily penalize mathematical False Negatives against rare fraud vectors. Monitors model health via immediate Confusion Mapping and Precision-Recall isolation.
@@ -38,3 +38,5 @@ Execute the Fraud Analytics Command Center locally via Windows/Linux terminal:
 ```bash
 python -m streamlit run app.py
 ```
+
+
