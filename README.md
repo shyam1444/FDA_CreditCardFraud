@@ -3,6 +3,8 @@
 ## Overview
 A comprehensive, two-phase machine learning pipeline governing the entire credit card life cycle: Pre-Issuance Approval Classification (via Orange Data Mining) and Post-Issuance Fraud Detection Analytics (via custom Python Streamlit architecture).
 
+# Dataset Link: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023/data
+
 ---
 
 ## Phase 1: Pre-Issuance Approval Classification
